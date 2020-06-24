@@ -12,4 +12,5 @@ int main()
         sum += 1.0 / temp;
     }
     printf("S = %f", sum);
+    return 0;
 }
