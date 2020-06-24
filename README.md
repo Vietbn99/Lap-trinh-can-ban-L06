@@ -1,2 +1,3 @@
 # Lap-trinh-can-ban-L06
-Bài tập làm về nhà...
+
+File làm bài tập về nhà của Nguyễn Thế Việt
