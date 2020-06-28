@@ -17,7 +17,7 @@ int main()
     }
     else if (month == 2)
     {
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 100 == 0 && year % 400 == 0))
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
         {
             printf("Thang %d/%d co 29 ngay", month, year);
         }
