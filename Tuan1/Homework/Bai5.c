@@ -11,7 +11,7 @@ int main()
     int temp = 1;
     for (int i = 2; i <= n; i++) // vòng lặp chạy i từ 2 đến n
     {
-        temp *= i;         // đây là toán tử tương đương temp = temp*i;
+        temp *= i;         // đây là toán tử tương đương temp = temp*i; có tác dụng tạo ra giai thừa.
         sum += 1.0 / temp; // nhớ ép kiểu nhé vì 1 và temp đều số nguyên nên kết quả sẽ ra số nguyên.
     }
     printf("S = %f", sum);
