@@ -1,11 +1,15 @@
 /*
     Đề bài ở file
+    ý tưởng: là chạy vòng lặp để tìm n thỏa mãn yêu cầu đề bài rồi tạo vòng lặp chạy từ 1 đến n vừa tìm được để tính tổng.
 */
 
 #include <stdio.h> // khai báo thư viện
 
-float fun(int x) // tạo hàm trả kết quả float nên phải có return ....;
+int main() // hàm main
 {
+    int x;
+    printf("Nhap x: ");
+    scanf("%d", &x);
     float sum = 1; // khởi tạo biến sum bằng 1
     int i = 1;     // khởi tạo biến i = 1
     float temp = x;
@@ -15,14 +19,6 @@ float fun(int x) // tạo hàm trả kết quả float nên phải có return ..
         i++;
         temp = temp * x / i;
     }
-    return sum;
-}
-
-int main() // hàm main
-{
-    int x;
-    printf("Nhap x: ");
-    scanf("%d", &x);
-    printf("e^x: %6f", fun(x)); // hàm fun(x) là lời gọi hàm
+    printf("e^%d = %6f", x, sum); // hàm fun(x) là lời gọi hàm
     return 0;
 }
