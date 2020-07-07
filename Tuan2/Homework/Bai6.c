@@ -44,7 +44,7 @@ int SoNguyenTo(int arr[100], int n)
 
 int main()
 {
-    int arr[100]; // khai báo mảng gồm 100 phần tử
+    int arr[100]; // khai báo mảng gồm 100 phần tử thuộc kiểu int
     int n;
     printf("n = ");
     scanf("%d", &n);
