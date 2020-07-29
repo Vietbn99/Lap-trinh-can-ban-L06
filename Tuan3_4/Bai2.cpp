@@ -18,6 +18,8 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <conio.h>
+#include <math.h>
+#include <string.h>
 
 void maxmatran(int a[100][100], int n)
 {
