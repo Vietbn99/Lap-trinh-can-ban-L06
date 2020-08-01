@@ -58,7 +58,7 @@ void nhapsv(SV &a)
 
 void hienthi(SV a)
 {
-    printf("%-5s%-25s%-8d%s\n", a.masv, a.Hoten, a.tuoi, a.lop);
+    printf("%-15s%-25s%-8d%s\n", a.masv, a.Hoten, a.tuoi, a.lop);
 }
 
 void timkiemten(SV a[], int n)
@@ -79,13 +79,11 @@ void timkiemten(SV a[], int n)
 
 void sapxep(SV a[], int n)
 {
-    char b[10];
-
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (a[i].masv > a[j].masv)
+            if (strcmp(a[i].masv, a[j].masv) > 0)
             {
                 SV temp = a[i];
                 a[i] = a[j];
@@ -117,8 +115,8 @@ int main()
     int n;
     int choose;
     bool daNhap = false;
+here:
     hienthimenu();
-nhap:
     do
     {
         printf("Moi ban chon chuc nang: ");
@@ -141,7 +139,7 @@ nhap:
     case 2:
         if (daNhap)
         {
-            printf("MSV   Ho va ten              Tuoi     Lop  \n");
+            printf("MSV            Ho va ten                Tuoi    Lop  \n");
             for (int i = 0; i < n; i++)
             {
                 hienthi(a[i]);
@@ -191,6 +189,11 @@ nhap:
     case 6:
         return 0;
     default:
-        break;
+        printf("Khong hop le!!!\n");
+    nhap:
+        printf("Nhap phim bat ky de xoa man hinh\n");
+        getch();
+        system("cls");
+        goto here;
     }
 }
