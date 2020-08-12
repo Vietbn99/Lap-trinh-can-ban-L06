@@ -28,7 +28,7 @@ SinhVien nhapDuLieu()
     printf("\tNhap tuoi: ");
     scanf("%d", &sv.tuoi);
     printf("\tNhap diem: ");
-    scanf("%d", &sv.diem_TB);
+    scanf("%f", &sv.diem_TB);
     return sv;
 }
 
@@ -75,7 +75,7 @@ void hienThiDanhSach()
 {
     //In ra Tieu de danh sach
     printf("\t\tDANH SACH\n");
-    printf("\t%4s|%-20s|%5s|%6f|\n", "STT", "Ho ten", "Tuoi", "DiemTB");
+    printf("\t%4s|%-20s|%5s|%6s|\n", "STT", "Ho ten", "Tuoi", "DiemTB");
 
     //Duyet tung phan tu cua danh sach va in gia tri tung phan tu
     int i;
